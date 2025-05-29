@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DreamMemo - Project Details</title>
+    <title data-translate-key="dreamMemoTitle">DreamMemo - Project Details</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 text-gray-800 project-page">
     <header class="bg-purple-600 text-white shadow-md">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold">DreamMemo</h1>
-            <a href="../index.html" class="text-lg hover:text-purple-200">Back to Portfolio</a>
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+            <h1 class="text-3xl font-bold" data-translate-key="dreamMemoTitle">DreamMemo</h1>
+            <div class="absolute top-4 right-4 text-sm">
+                <button id="lang-en" class="text-white hover:text-purple-200 font-semibold px-2 py-1">EN</button>
+                <span class="text-white">/</span>
+                <button id="lang-ja" class="text-white hover:text-purple-200 font-semibold px-2 py-1">JA</button>
+            </div>
+            <a href="../index.html" class="text-lg hover:text-purple-200" data-translate-key="backToPortfolioLink">Back to Portfolio</a>
         </div>
     </header>
     <main class="container mx-auto px-6 py-12">
         <div class="bg-white p-8 rounded-lg shadow-xl text-center">
-            <h2 class="text-2xl font-semibold mb-4">Project Details</h2>
-            <p class="text-lg">Details for the DreamMemo project will be displayed here soon.</p>
-            <p class="mt-6 text-sm text-gray-500">This is a placeholder page.</p>
+            <h2 class="text-2xl font-semibold mb-4" data-translate-key="projectDetailsTitle">Project Details</h2>
+            <p class="text-lg" data-translate-key="detailsPlaceholderText">Details for the DreamMemo project will be displayed here soon.</p>
+            <p class="mt-6 text-sm text-gray-500" data-translate-key="placeholderPageText">This is a placeholder page.</p>
         </div>
     </main>
     <footer class="bg-gray-800 text-white text-center py-6 mt-12">
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        <p data-translate-key="projectFooterText">&copy; 2023 My Portfolio. All rights reserved.</p>
     </footer>
+    <script src="../../js/lang.js" defer></script>
+    <script src="../../js/main.js" defer></script>
 </body>
 </html>
